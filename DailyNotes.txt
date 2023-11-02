@@ -1,0 +1,91 @@
+
+
+Language:
+=========
+communication with human
+
+Programming Language:
+====================
+	communication with machine
+	
+	
+	HW--->S/W-->set of programs
+
+		
+		 POP						 		 OOPs
+B,C,BCPL,COBOL,PHOTON...		c++,python,java,.net,php.....oopl
+
+	 functions							Objects
+
+pointers,no multi taskings
+				 
+
+				   1)performance    inheritance,polymorphisam
+				   2)security		encapsulation,abstraction
+
+
+
+python-->1993
+java -->1995
+
+			why java?  mobile application
+			
+			
+			1)Platform independent		WORA
+			2)garbage collection		garbage collector 			OAK-->java tree
+			
+			sun micro system / James gosling-->oracle 			microsoft 
+						user1    app1  					.net pdependent
+						windows11
+						
+		user2				   user3		
+		rajeshwari			   harshini
+		windows11				linux
+			
+			
+			netflix-->mobile(ios),tv(android),tab,laptop
+			
+			
+			java -->JDK 1995,1996 1.0
+			
+			
+	welcome to java world		
+	
+	
+	compailation,execution,.class,.java,jdk,jvm,jre...
+			
+			
+			
+			https://www.oracle.com/in/java/technologies/downloads/
+			
+			
+	Q)write a java program to print welcome message?
+
+alphabates 	english 26
+			
+keywords   53 -->all the keywords in java must be in lowercase 			
+			
+			
+			.java
+			
+
+
+
+
+//printing welcome message 
+
+//
+//In class name everyword first letter should be capital 
+
+//JDK -->JRE -->JVM(0's 1's)byte code 
+
+
+// translater -->translation
+
+//source code -->compiler -->byte code 
+//.java-->compiler--->.class   javac filename.java
+
+
+
+
+
