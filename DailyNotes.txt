@@ -81,7 +81,7 @@ keywords   53 -->all the keywords in java must be in lowercase
 //source code -->compiler -->byte code 
 //.java-->compiler--->.class   javac filename.java for compailation
 
-java classname-->for execution
+java classname-->for execution  JVM
 
 
 Identifiers:
@@ -143,6 +143,75 @@ char	2 bytes					char gender='M'
 boolean	 1 bit	true,false		
 
 				1		0
+
+
+	local variables -->inside the method
+	global variables-->outside the method and inside the class
+	
+			2 types 
+				instance 
+				static 
+
+JDK-->JRE-->JVM
+
+	-->memory  areas
+
+
+Instance and static:
+====================
+
+
+Syntax
+		static 
+		non-static / instance 
+	
+Memory
+		if it is static will get memory space only once at the time of class loading into JVM 
+		if it is instance will get memory space for every object creation 
+
+					object -->instance of a class  car,tree
+				
+			class 	A
+				{
+				A obj=new A();
+				}			
+				classname objname=new classname();	
+			
+Access
+		if it is static we can access by using class name
+		if it is instance  we can access by using obj reference
+
+Usage 
+
+		where we need one time memory will go for static 
+			ex:countryname,statename,collegename,orgname
+		unique data -->instance 
+			aadhar ,id,contact,accno....
+
+
+
+
+TASK-1
+========
+write a java program to print addition,substraction,multiplication of 12,13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
