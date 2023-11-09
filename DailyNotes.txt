@@ -190,21 +190,44 @@ Usage
 
 
 
-
-TASK-1
-========
-write a java program to print addition,substraction,multiplication of 12,13
+package -->folder 
 
 
-
-
-
-
-
+		java8--->6000 predefined classes 
+	java.lang -->predefined it is default package 
+	
+	com.india			user defined 
+	
+import 
 
 
 
+editor
+netbeans,myeclipse,eclipse,intellji,vscode....
 
+
+apache
+
+ ctrl+shift+O -->to organise imports(to add which are needed to remove which are useless)
+
+ctrl+shift+f --->to format java file 
+
+ctrl+/       --->for commenting selected lines 
+
+
+Methods:reusability
+
+
+
+
+
+public,private,protected,default
+ accessmodifier static/instance returntype methodname(param1,param2....)
+			{
+			
+			
+			
+			}
 
 
 
