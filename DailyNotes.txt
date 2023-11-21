@@ -218,9 +218,6 @@ ctrl+/       --->for commenting selected lines
 Methods:reusability
 
 
-
-
-
 public,private,protected,default
  accessmodifier static/instance returntype methodname(param1,param2....)
 			{
@@ -233,8 +230,14 @@ public,private,protected,default
 
 
 
+Flow Control:
+============
+
+		
 
 
+Exception handling
+try,catch,finally ,throw ,throws
 
 
 
