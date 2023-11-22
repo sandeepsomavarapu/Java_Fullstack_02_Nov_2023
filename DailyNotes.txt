@@ -235,6 +235,56 @@ Flow Control:
 
 		
 
+Operators:
+==========
+
+
+
+Arrays:
+=========group of values
+
+
+		variables
+		
+		
+		datatype varname=value;
+		
+		int marks=123;
+			marks=234;
+			sop(marks);//234
+		
+		
+		int marks1[]={12,32,43,22,46,8,64,121,545};//literal 
+		
+		int marks2[]=new int[10];
+		
+		marks2[0]=123
+
+index
+
+		sop(marks1[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Exception handling
 try,catch,finally ,throw ,throws
