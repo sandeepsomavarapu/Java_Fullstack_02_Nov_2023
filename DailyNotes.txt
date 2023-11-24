@@ -265,32 +265,72 @@ index
 		sop(marks1[0])
 
 
+Dynamic Input:						int[] args		12,23,4,32,"",false
+==============
+			public static void main(String[] args) //jvm   java classname sandeep 123 true
+
+
+
+	"asdkga23@_12"
+
+JVM:-
+====
+
+	java setup 
+
+
+	JDK-->JRE-->JVM
+	
+	
+	compailation:
+	
+			source ---->byte 
+			.java --->.class
+
+			compiler -->javac filename.java
+			
+			execution--->java classname   JVM
+
+
+
+JVM Architecture
+
+		3 parts
+		
+		
+		
+			CLSS
+			
+			
+			Memory Areas
+			
+			
+			
+			Execution Engine 
 
 
 
 
 
+OOPS Features:
+==============
+
+
+		inheritance
+		polymorphisam
+		
+		encapsulation
+		abstraction
 
 
 
+String
 
+exception handling
 
+multi threading
 
-
-
-
-
-
-
-
-
-
-
-Exception handling
-try,catch,finally ,throw ,throws
-
-
-
+collections
 
 
 
