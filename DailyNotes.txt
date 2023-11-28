@@ -332,5 +332,43 @@ multi threading
 
 collections
 
+			21,11,43,9,7,62,23-->0,1,2,3,4,5,6
 
+
+		7,9,11,21,23,43,63
+		
+
+	String,StringBuffer,StringBuilder	java.lang
+	=================================
+	
+	
+		group of chars -->string -->""
+	
+	
+				"welcome to india @ 78"
+	
+	
+	muttable 
+	imuttable
+	
+	
+	String orgName="capgemini";//literal
+	
+	String orgName1=new String("capgemini");//new 
+	
+	
+	
+			String is imuttable
+			StringBuffer,StringBuilder is muttable
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
