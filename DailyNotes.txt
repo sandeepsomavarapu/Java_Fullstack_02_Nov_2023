@@ -361,12 +361,186 @@ collections
 			String is imuttable
 			StringBuffer,StringBuilder is muttable
 	
+	OOPS:
+	====
+	
+	1)inheritance
+	2)polymorphisam		:performance
+	
+	3)abstraction
+	4)encapsulation		:security
+	
+	
+	
+		1)inheritance:
+		==============
+		Code Reusability ---performance ,  extends  & implements
+	
+	inheritance is a process of aquiring the features/properties from one class another class
+	
+	
+	
+	class X{
+	
+	//1000 methods...
+	//20 variables .....
+	
+	}
+	
+	
+	class Y extends X{
+	
+	//200 methods
+	
+	
+	}
+	
+
+	
+	java.lang -->predefined it is default package 
+	
+	
+	By default package for every java file is java.lang
+	By default parent class for every java class is java.lang.Object   
+	
+	
+	
+	
+	Multiple Inheritance:
+	====================
+	
+	MI is not supported by java through classes 
+	MI is supported by java through interfaces 
+	
+	
+	
+	
+	parent/super
+	
+	child/sub
+	
+	
+	methodss
+					concrete methods:method with body/logic/implementation :non-abstract
+	public void add(int a, int b) {
+		System.out.println("add of two numbers : " + (a + b));
+	}
+
+	public void sub(int a, int b) {
+		System.out.println("sub of two numbers : " + (a - b));
+
+	}
+
+					
+	abstract methods:method with body/logic/implementation
+	
+	public abstract void mul(int a, int b);//security
+	
+	
+	abstraction:
+	
+		class		   : class is collection of only concrete methods
+	
+		abstract class :abstract class is combination both concrete and abstract methods 0-100%
+	
+		interface	   :interface is a collection only abstract methods  100%
+	
+	
+	
+	multiple inheritance:
+	
+				MI NOT SUPPORTED BY JAVA THROUGH CLASSES
+				MI  SUPPORTED BY JAVA THROUGH INTERFACES
+				
+				
+	
+class	parent1 				class parent2
+{								{
+
+ void m1()						void m1()
+ {								{
+ sop("hello");					sop("hi");
+ }								}	
+
+}								}
+	
+	
+class Child extends parent1,parent2
+{
+
+ p s v main(String args[])
+ {
+	Child child=new Child();
+			child.m1();//
+		
+ 
+ }
+
+}	
+
+
+
+
+Interface	parent1 			interface parent2
+{								{
+
+ void m1();						void m1();
+
+}								}
+	
+	
+class Child implements parent1,parent2
+{
+ p s v main(String args[])
+ {
+	Child child=new Child();
+			child.m1();//
+		
+ 
+ }
+ 
+ public void m1()
+ {
+ sop("welcome");
+ }
+
+}	
+
+
+
+Access Modifiers:
+=================	
+	
+	public		every where 
+	private		only inside the class /class level scope 
+	protected	inside the package and outside the package only in child
+	default 	package level scope
 	
 	
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
 	
 	
 	
