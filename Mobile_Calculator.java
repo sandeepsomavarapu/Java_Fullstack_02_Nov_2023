@@ -25,8 +25,7 @@ class PC_Calci extends Caluculator {
 	}
 
 }
-
-public class Mobile_Calculator extends Caluculator {
+public class Mobile_Calculator extends PC_Calci {
 
 	public void div(int a, int b) {
 		System.out.println("div of two numbers : " + (a / b));
