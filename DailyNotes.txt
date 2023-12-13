@@ -1,548 +1,586 @@
 
 
+
+Java Fullstack:
+================
+
+		corejava 
+		database(MYSQl)
+		jdbc
+		servlet
+		jsp
+		spring 
+		springboot
+		jpa
+		hibernate
+		microservices
+
+	html,css,js,bs,ts,angular
+
+
 Language:
 =========
-communication with human
+		communication with human
 
 Programming Language:
-====================
-	communication with machine
-	
-	
-	HW--->S/W-->set of programs
+======================
+		communication with machine
 
+
+software
+
+		c,c++,java,python,.net.php,......
 		
-		 POP						 		 OOPs
-B,C,BCPL,COBOL,PHOTON...		c++,python,java,.net,php.....oopl
 
-	 functions							Objects
+			POP							OOP	
+C,BCPL,B,COBOL,PHOTON,....			C++,java,python,.net,php.....
 
-pointers,no multi taskings
-				 
-
-				   1)performance    inheritance,polymorphisam
-				   2)security		encapsulation,abstraction
+		functions
+	pointers		Performance		Inehritance,Polymorphisam
+					Security		encapsulation,abstraction
+				
 
 
+why java?
 
-python-->1993
-java -->1995
+	1)platform independent  
+	2)garbage collection -->garbage collector  c,c++
 
-			why java?  mobile application
-			
-			
-			1)Platform independent		WORA
-			2)garbage collection		garbage collector 			OAK-->java tree
-			
-			sun micro system / James gosling-->oracle 			microsoft 
-						user1    app1  					.net pdependent
-						windows11
-						
-		user2				   user3		
-		rajeshwari			   harshini
-		windows11				linux
-			
-			
-			netflix-->mobile(ios),tv(android),tab,laptop
-			sun micro system-->oracle
-			
-			java -->JDK 1995,1996 1.0
-			
-			
-	welcome to java world		
-	
-	
-	compailation,execution,.class,.java,jdk,jvm,jre...
-			
-			
-			
-			https://www.oracle.com/in/java/technologies/downloads/
-			
-			
-	Q)write a java program to print welcome message?
+				1995,1996 ,
+				sun micro system-->oracle corporation
+				JDK 1.0
+				
+				21
+	james gosling
 
-alphabates 	english 26
-			
-keywords   53 -->all the keywords in java must be in lowercase 			
-			
-			.java
+			machine1		java app		WORA
+			sandeep			.net microsoft
+			windows11
 			
 
-//printing welcome message 
+machine2	  	machine3
+charan			varsha
+linux			mac
 
-//
-//In class name everyword first letter should be capital 
+			
+			
+				python-->1993--->simple
 
-//JDK -->JRE -->JVM(0's 1's)byte code 
 
 
-// translater -->translation
+Java Installation
 
-//source code -->compiler -->byte code 
-//.java-->compiler--->.class   javac filename.java for compailation
 
-java classname-->for execution  JVM
+welcome to java
+
+				Welcome.java
+javac filename.java -->compailation-->compailer
+java classname---->execution-->jvm
+
+53--keywords--->lowercase
+
+.java
+
+user understable language 
 
 
 Identifiers:
 =============
- any name in java will call it as identifier
 
-	classname,varname,methdname,objname,....
-
-
-class Test@123
-{
+any name in java will call it as identifier 
 
 
-}
+	Welcome@123
+
 		a-z
 		A-Z
 		0-9
 		$
 		_
 Variables:
-==========
-		234928374-- naren
-
-	12+13
-	
-	age=123;
-	
-	variable name of memory location
-	
+===========
+		variable is a name of memory location
+		
+		
+		reusability
+		
+		
 	syntax:
+	  datatype varname=value
+		
+		
+		
+		
+		PDT    				NPDT
+		
+	   8						String,Array....	
+		
+	byte	1 byte		-128 to 127
+	short	2			-32768 to 32767
+	int		4			-2147483648 to 2147483647
+	long	8			-2 power 63 to (2 power 63 )- 1
 	
-		datatype varname=value;
+	float	4			23.549802347923f	 5 to 6
+	double	8								14 to 15
+		
+	char	2			''
+	boolean 1 bit 		true,false
+		
+		
+				byte age 1
+				long age 8  
+		
+		
+		english
+		18 
+		
+		
+		2 types 
+		local variables :inside the method 
+		
+		global variables :outside the method with in the class
 
-Datatypes:
-=========
-
-	empid		123
-	name		narendra
-	contact		94949494
-	gender		M
-	salary		23.56
-	aadhar
-						byte age=31;
-
-	premitive dt   non-pdt
-
-	8 				String,arrays...
-
-		numeric data
-byte	1 byte		-128 to 127
-short	2 bytes		-32768 to 32767	
-int		4 bytes		-2147483648 to 2147483647
-long	8 bytes		-2 power 64 to (2 power 64)-1	
-		decimal data
-float	4 bytes		23.43123234234423f	  5to6 
-double	8 bytes							14 to 15 
-
-char	2 bytes					char gender='M'
-boolean	 1 bit	true,false		
-
-				1		0
+				instance and static 
 
 
-	local variables -->inside the method
-	global variables-->outside the method and inside the class
 	
-			2 types 
-				instance 
-				static 
-
-JDK-->JRE-->JVM
-
-	-->memory  areas
+instance and static difference :
+=============================== 
 
 
-Instance and static:
-====================
+		local and global
 
-
-Syntax
-		static 
-		non-static / instance 
+	syntax:
+	======
+			static int countryCode=91 //static 4 bytes 
+					int eid=123;
+					
+					javac filename.java  compiler 
+					java classname			JDK-->JRE-->JVM-->
+	memory:
+	======
+		static variables will get memory only once at the time of class loading into JVM
+		instance variables will get memory for every object creation
 	
-Memory
-		if it is static will get memory space only once at the time of class loading into JVM 
-		if it is instance will get memory space for every object creation 
+			class A
+			
+			
+			classname objname=new classname();
+			A a=new A();
+	
+	Access:
+	======
+			static variables can be accessable by using classname 
+			instance variables can be accessable by using objref 
+	
+	Usage:
+	=======
+			for common data will  go with static 
+									countryname,countryCode,orgName,schoolName....
+			for unique data will go with instance 
+			
+									eid,contact,aadhar,pan,account,.....
 
-					object -->instance of a class  car,tree
+
+Flow control:
+================
+
+
+
+
+JVM Architecutre:
+==================
+
+
+			execution flow
+			javac filename.java					java classname
+	.java --------------------------->	.class	-------------------->output
+			compiler--->compailation			JVM--->execution
+
+
+
+			JVM
+			
+				3 parts 
 				
-			class 	A
-				{
-				A obj=new A();
-				}			
-				classname objname=new classname();	
-			
-Access
-		if it is static we can access by using class name
-		if it is instance  we can access by using obj reference
+				
+								CLSS(class loader syb system)
+								
+								
+								memory areas
+								
+								5 MA
+								
+								execution engine
 
-Usage 
 
-		where we need one time memory will go for static 
-			ex:countryname,statename,collegename,orgname
-		unique data -->instance 
-			aadhar ,id,contact,accno....
+		local variables			how much DT   when	where 
+		instance 
+		static 
 
 
 
-package -->folder 
-
-
-		java8--->6000 predefined classes 
-	java.lang -->predefined it is default package 
-	
-	com.india			user defined 
-	
-import 
-
-
-
-editor
-netbeans,myeclipse,eclipse,intellji,vscode....
-
-
-apache
-
- ctrl+shift+O -->to organise imports(to add which are needed to remove which are useless)
-
-ctrl+shift+f --->to format java file 
-
-ctrl+/       --->for commenting selected lines 
-
-
-Methods:reusability
-
-
-public,private,protected,default
- accessmodifier static/instance returntype methodname(param1,param2....)
-			{
-			
-			
-			
-			}
-
-
-
-
-
-Flow Control:
-============
+package -->folder
+		pre defined --->java.lang default package 
+		user defined -->package 
 
 		
 
-Operators:
-==========
+
+	public static void main(String[] args) {
+
+	}
+
+methods 
+
+						methodname/variable name-->camelcase
+						class name -->pascalcase
+syntax:
+		accessmodifier static/instance returntype methodname 
 
 
+	reusability
+
+
+		
 
 Arrays:
-=========group of values
+==========
 
 
-		variables
-		
-		
 		datatype varname=value;
-		
-		int marks=123;
-			marks=234;
-			sop(marks);//234
-		
-		
-		int marks1[]={12,32,43,22,46,8,64,121,545};//literal 
-		
-		int marks2[]=new int[10];
-		
-		marks2[0]=123
-
-index
-
-		sop(marks1[0])
 
 
-Dynamic Input:						int[] args		12,23,4,32,"",false
-==============
-			public static void main(String[] args) //jvm   java classname sandeep 123 true
+			int marks = 123; 
 
+				marks=	99;
 
-
-	"asdkga23@_12"
-
-JVM:-
-====
-
-	java setup 
-
-
-	JDK-->JRE-->JVM
+ to store group values -->arrays
+ 
+ 
+	int marks[]={12,23,43,55,63,533,53,99,89};//array literal
 	
-	
-	compailation:
-	
-			source ---->byte 
-			.java --->.class
-
-			compiler -->javac filename.java
-			
-			execution--->java classname   JVM
-
-
-
-JVM Architecture
-
-		3 parts
+	index-->0,1,2,3,4,5,6,7,8
+ 
+ 
+	int marks[]=new int[9];//AIOE
+ 
+ 
+ 
+ 
+					Performance		Inheritance,Polymorphisam
+					Security		encapsulation,abstraction
+ 
+ 
+ Inheritance:
+ ============ Single,multi level,hirarchie,multiple 
+ 
+	its a process of aquiring the features from one class to another class.
+ 
+ 
+ 
+		CODE Reusability:
 		
 		
-		
-			CLSS
-			
-			
-			Memory Areas
-			
-			
-			
-			Execution Engine 
+		extends ,implements
 
 
-
-
-
-OOPS Features:
-==============
-
-
-		inheritance
-		polymorphisam
-		
-		encapsulation
-		abstraction
-
-
-
-String
-
-exception handling
-
-multi threading
-
-collections
-
-			21,11,43,9,7,62,23-->0,1,2,3,4,5,6
-
-
-		7,9,11,21,23,43,63
-		
-
-	String,StringBuffer,StringBuilder	java.lang
-	=================================
+	class X
+	{
 	
-	
-		group of chars -->string -->""
-	
-	
-				"welcome to india @ 78"
-	
-	
-	muttable 
-	imuttable
-	
-	
-	String orgName="capgemini";//literal
-	
-	String orgName1=new String("capgemini");//new 
-	
-	
-	
-			String is imuttable
-			StringBuffer,StringBuilder is muttable
-	
-	OOPS:
-	====
-	
-	1)inheritance
-	2)polymorphisam		:performance
-	
-	3)abstraction
-	4)encapsulation		:security
-	
-	
-	
-		1)inheritance:
-		==============
-		Code Reusability ---performance ,  extends  & implements
-	
-	inheritance is a process of aquiring the features/properties from one class another class
-	
-	
-	
-	class X{
-	
-	//1000 methods...
-	//20 variables .....
+	//1000 methods
 	
 	}
+	class Y extends X
+	{
+
+	//20 methods
+
+	}
+
+
+
+
+	interface X
+	{
 	
-	
-	class Y extends X{
-	
-	//200 methods
-	
+	//1000 methods
 	
 	}
-	
+	class Y implements X
+	{
 
+	//20 methods
+
+	}
+
+NOTE:
+=======
+
+	1) BY DEFAULT PACKAGE FOR EVERY JAVA FILE  java.lang
 	
-	java.lang -->predefined it is default package 
-	
-	
-	By default package for every java file is java.lang
-	By default parent class for every java class is java.lang.Object   
-	
-	
-	
-	
-	Multiple Inheritance:
-	====================
-	
-	MI is not supported by java through classes 
-	MI is supported by java through interfaces 
-	
-	
-	
-	
-	parent/super
-	
-	child/sub
-	
-	
-	methodss
-					concrete methods:method with body/logic/implementation :non-abstract
+	2) BY DEFAULT PARENT CLASS FOR EVERY JAVA CLASS IS java.lang.Object--11
+
+
+
+Methods
+
+
+	public static void main(String[] args) {
+
+	}
 	public void add(int a, int b) {
 		System.out.println("add of two numbers : " + (a + b));
 	}
 
 	public void sub(int a, int b) {
 		System.out.println("sub of two numbers : " + (a - b));
-
 	}
 
+
+
+abstract  and concrete 
+
+		
+		concrete method/non-abstract:
+		
+		a method  with body/implementation
+
+		abstract method:
+		
+		a method  with out body/implementation
+
+
+
+	public abstract void mul(int a, int b) ;
+
+abstraction:
+
+
+	abstract classes :0-100%
+	
+	interface 			100%
+
+
+
+
+class			:its collection of only conrete methods
+
+abstract class	:its a combination both concrete and abstract methods 
+
+interfaces		:its a collection only abstract methods 
+
+
+we cannot create object for abstract class  and interface
+
+
+multiple Inheritance:
+=======	===========
+
+
+			many parents and one child
+
+
+MI not supported by java through classes
+MI  supported by java through interfaces`
+				
+
+
+interface A					interface B
+{						{
+	m1();					m1();
+
+
+}						}
+
+
+
+class C implements A,B
+{
+
+C 	c=new C();
+	c.m1();
+	
+	
+	
+	m1()
+	{
+	
+	
+	}
+}
+
+String,stringbuffer,stringbuilder   java.lang
+
+
+
+		to represent group/collection of characters 
+
+
+
+			"welcome to india"
+
+
+String:imuttable
+StringBuffer				synchronized		
+StringBuilder:	muttable  not synchronized		
+
+
+		public void m1()
+		{
+		
+		}
+
+
+		public synchronized void m2()
+		{
+		
+		}
+
+
+	String name="odigos";//imuttable
+
+JDK,JVM,JRE--->heap,method,stack
+
+
+package com.odigos.oops;
+
+public class StringExample {
+	public static void main(String[] args) {
+		// Immutable
+		String name = "odigos";// literal -->heap--->SCP--->duplicates are not allowed
+		String name1 = "odigos";
+		String name2 = "Odigos";
+		System.out.println(name.equals(name1));// value comparison true
+		System.out.println(name1 == name2);// false
+		System.out.println(name2.equals(name1));// value comparison false
+		System.out.println(name2.equalsIgnoreCase(name1));// value comparison true
+		System.out.println(name.compareTo(name1));// 0
+		System.out.println("adigos".compareTo("aeigos"));// 97 98 -1
+		System.out.println("odigos".compareToIgnoreCase("Odigos"));// 97 98 -1 A-65
+		System.out.println("odigos".codePointAt(1));// ,a-97 A-65
+		System.out.println("adigos".codePointBefore(1));// ,a-97
+		System.out.println("odigos kakinada".toUpperCase());
+		System.out.println("odigos kakinada".charAt(4));
+		System.out.println("welcome to india".length());
+		System.out.println("odigods".indexOf('d'));
+		System.out.println("odigods".lastIndexOf('d'));
+//		compareTo 
+//		--return -ve if obj1 has to come before obj2
+//		--return +ve if obj1 has to come after obj2
+//		-- return 0 if obj1 & obj2 are equal.
+//		System.out.println(name.concat(" kakinada"));// odigos kakinada--GC
+//		System.out.println(name);
+//		StringBuilder sb = new StringBuilder("kakinada");// mutable
+//		sb.append(" india");
+//		System.out.println(sb);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+		scanner
+		
+			username
+			password
+			
+			
+			username is odigos password odigoskakinada
+			
+				login sucess
+			
+			enter valid credentials
+			
+
+
+public -->every where
+default-->package level scope
+private-->class level  scope
+protected-->inside the package every where and outside the package only when ever it is child
+
+
+
+
+
+Polymorphisam:
+==============
+
+		poly-->many
+		morphisam-->forms 
+
+		
+		method overloading 
+		
+					method name is same signature is different 
 					
-	abstract methods:method with body/logic/implementation
-	
-	public abstract void mul(int a, int b);//security
-	
-	
-	abstraction:
-	
-		class		   : class is collection of only concrete methods
-	
-		abstract class :abstract class is combination both concrete and abstract methods 0-100%
-	
-		interface	   :interface is a collection only abstract methods  100%
-	
-	
-	
-	multiple inheritance:
-	
-				MI NOT SUPPORTED BY JAVA THROUGH CLASSES
-				MI  SUPPORTED BY JAVA THROUGH INTERFACES
-				
-				
-	
-class	parent1 				class parent2
-{								{
+										no of params 
+										order of params
+										type of params
+					
+		
+		method overriding 
 
- void m1()						void m1()
- {								{
- sop("hello");					sop("hi");
- }								}	
+					method name is same implementation is different
 
-}								}
+
+
+	final 
 	
+		before the variable
+		before the method
+		before the class
 	
-class Child extends parent1,parent2
+
+constructor:
+===============
+
+	constructor is a special member functions
+	
+		which is used to intialise the object 
+	
+	constructor name must be classname 
+	constructor never return 
+
+class A
 {
 
- p s v main(String args[])
- {
-	Child child=new Child();
-			child.m1();//
-		
- 
- }
-
-}	
+				A obj=new A();
+}
 
 
-
-
-Interface	parent1 			interface parent2
-{								{
-
- void m1();						void m1();
-
-}								}
-	
-	
-class Child implements parent1,parent2
-{
- p s v main(String args[])
- {
-	Child child=new Child();
-			child.m1();//
-		
- 
- }
- 
- public void m1()
- {
- sop("welcome");
- }
-
-}	
-
-
-
-Access Modifiers:
-=================	
-	
-	public		every where 
-	private		only inside the class /class level scope 
-	protected	inside the package and outside the package only in child
-	default 	package level scope
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		classname objname=new classname();
+		classname objname=new constructor();
 		
 		
 		
-		
-	
-	
-	
-	
+	to represent current class properties will use this keyword	
+								variable,method,constructor,object
+	to represent parent class properties will use super keyword	
+								variable,method,constructor		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
