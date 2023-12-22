@@ -107,7 +107,7 @@ We have 3 types of exceptions
 	Advantages:
 	-----------
 	
-	1)we can provide usee friendly error msgs
+	1)we can provide user friendly error msgs
 	
 	2)normal termination
 	
