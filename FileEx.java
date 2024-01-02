@@ -3,18 +3,15 @@ package com.virtual.io;
 import java.io.File;
 import java.io.IOException;
 
-public class FileEx {
-
+class FileEx {
 	public static void main(String[] args) throws IOException {
-			File file=new File("empinfo1");
-			System.out.println(file.exists());//false
-				//file.createNewFile();
-			file.mkdir();
-			System.out.println(file.exists());
-			System.out.println(file.isDirectory());
-			System.out.println(file.isFile());
-			System.out.println("folder created....");
-			
+		File f = new File("onmobile1.txt");
+		System.out.println(f.exists());// false
+		System.out.println(f.createNewFile());// false
+		// System.out.println(f.mkdir());//true
+		System.out.println(f.setReadOnly());// true
+		System.out.println(f.exists());// true
+		System.out.println(f.isDirectory());// true
+		System.out.println(f.isFile());// false
 	}
-
 }

@@ -3,14 +3,18 @@ package com.virtual.io;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileWriterEx {
-
+class FileWriterEx {
 	public static void main(String[] args) throws IOException {
-		
-		FileWriter fw = new FileWriter("studentInfo.txt");
-		fw.write("welcome to india");
-		System.out.println("data written");
+		FileWriter fw = new FileWriter("onmobile2.txt");// it will create
+		fw.write(97);// charater
+		fw.write("sandeep \n intelect");
+		fw.write("\n");
+		char[] ch1 = { 'a', 'b', 'c' };
+		fw.write(ch1);
+		fw.write("\n");
+
 		fw.flush();
+		fw.close();
 	}
 
 }

@@ -1,38 +1,60 @@
-package com.virtual.oops;
+package com.virtual.io;
 
-public class Employee {
-	private int empid;
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+	private int empId;
 	private String empName;
-	private float empSal;
+	private int empSal;
 	private String empAdd;
-	
-	public int getEmpid() {
-		return empid;
+
+	public int getEmpId() {
+		return empId;
 	}
-	public void setEmpid(int empid) {
-		this.empid = empid;
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
 	}
+
 	public String getEmpName() {
 		return empName;
 	}
+
 	public void setEmpName(String empName) {
 		this.empName = empName;
 	}
-	public float getEmpSal() {
+
+	public int getEmpSal() {
 		return empSal;
 	}
-	public void setEmpSal(float empSal) {
+
+	public void setEmpSal(int empSal) {
 		this.empSal = empSal;
 	}
+
 	public String getEmpAdd() {
 		return empAdd;
 	}
+
 	public void setEmpAdd(String empAdd) {
 		this.empAdd = empAdd;
 	}
-	
 
+	public Employee(int empId, String empName, int empSal, String empAdd) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empSal = empSal;
+		this.empAdd = empAdd;
+	}
 
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empSal=" + empSal + ", empAdd=" + empAdd + "]";
+	}
 
 }

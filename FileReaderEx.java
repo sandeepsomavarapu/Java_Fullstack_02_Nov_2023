@@ -1,21 +1,16 @@
 package com.virtual.io;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FileReaderEx {
-
-	public static void main(String[] args) throws IOException {
-		FileReader reader = new FileReader("studentInfo.txt");
-		int result = reader.read();
-		while(result!=-1)
+class FileReaderEx {
+	public static void main(String args[]) throws IOException {
+		FileReader fr1 = new FileReader("fisglobal.txt");// FNFE
+		int i = fr1.read();// size 3 abc -1
+		while (i != -1)// eof the file ==> -1
 		{
-			char data=(char) result;
-			System.out.println(data);
-			result=reader.read();
+			System.out.println((char) i);
+			i = fr1.read();
 		}
-
 	}
-
 }
