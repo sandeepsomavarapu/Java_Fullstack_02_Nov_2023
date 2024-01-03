@@ -718,6 +718,81 @@ FILE IO:
 
 
 
+1.login
+2.register
+
+		2
+		username
+		password			-->write credential.txt
+		1
+		username
+		password			-->read credential.txt
+		
+		
+		
+Collections:
+============	
+group	
+
+		variables:
+		==========
+		name of memory location
+		
+		
+		int a=123;
+			a=234;
+			
+			[]-->arrays
+		
+		int a[]={12,22,31,44,23};
+		
+		sop(a[4]);AIOE
+		
+		int values[]=new int[10];//AIOE
+		limitations:
+		
+			1.arrays are fixed in size 
+			2.arrays will allow only homogeneous data /similar data
+			3.no utility methods
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
