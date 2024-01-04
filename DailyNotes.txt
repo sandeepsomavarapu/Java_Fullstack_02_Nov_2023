@@ -755,10 +755,21 @@ group
 			2.arrays will allow only homogeneous data /similar data
 			3.no utility methods
 			
+
+
+Advantages collections:
+======================		
 			
+			1.collections are not fixed in size /growable in nature   -->AL-->10-->16 -->(cc*3/2)+1
+			2.collections will allow both homogeneous and heterogeneous data. 
+			3.lots of predefined methods
 			
-			
-			
+List:
+=====
+
+	1.duplicates are allowed 
+	2.insertion order is preserved 
+
 			
 			
 			
