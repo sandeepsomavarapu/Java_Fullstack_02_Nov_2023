@@ -1,814 +1,543 @@
-
-
+	Java Fullstack
+	
+	
+	
+	java developer
+	database developer
+	frontend develoeper
+	
+	
+	
+	corejava			case study-1
+	database(mysql)
+	JDBC
+	JPA					case study-2
+	SPring 
+	Springboot			case study-3
+	
+	html
+	css
+	js
+	bs
+	ts
+	angular				case study-4
+	
+	
+	
+	
 Language:
-=========
+==========
 communication with human
 
-Programming Language:
-====================
-	communication with machine
+Programming Languages:
+=======================
+		communication with machine	
 	
-	
-	HW--->S/W-->set of programs
-
+		c,c++,python,java,.net,php...
 		
-		 POP						 		 OOPs
-B,C,BCPL,COBOL,PHOTON...		c++,python,java,.net,php.....oopl
+		
+		POP								OOP
+B,BCPL,C,COBOL,PHOTON...		c++,python,java,.net,.php.....oopl
+		
 
-	 functions							Objects
+				1)Performance		inheritance,polymorphisam
+				2)Security			abstraction,encapsulation
 
-pointers,no multi taskings
-				 
-
-				   1)performance    inheritance,polymorphisam
-				   2)security		encapsulation,abstraction
-
-
-
-python-->1993
-java -->1995
-
-			why java?  mobile application
-			
-			
-			1)Platform independent		WORA
-			2)garbage collection		garbage collector 			OAK-->java tree
-			
-			sun micro system / James gosling-->oracle 			microsoft 
-						user1    app1  					.net pdependent
-						windows11
-						
-		user2				   user3		
-		rajeshwari			   harshini
-		windows11				linux
-			
-			
-			netflix-->mobile(ios),tv(android),tab,laptop
-			sun micro system-->oracle
-			
-			java -->JDK 1995,1996 1.0
-			
-			
-	welcome to java world		
+	oops features
 	
 	
-	compailation,execution,.class,.java,jdk,jvm,jre...
-			
-			
-			
-			https://www.oracle.com/in/java/technologies/downloads/
-			
-			
-	Q)write a java program to print welcome message?
+	oopl
+	
+	
+	WHY JAVA?	android	1995 JDK 1.0			WORA
+	
+			platform independent
+			garbage collection -->GC  JVM
+	
+	
+	
+		netflix
+	
+	
+	
+	
+	
+	java app  sunmicro system--oracle corporation
+	
+	
+	.net  microsoft platform depenedent
+	
+		windows 7
+		machine1	
+	
+	ram 			sai
+	linux			mac
+	
+	
+		welcome to java
+		
+		
+		java sun micro system
+		
+	
+	jdk-->jre-->JVM
+		JVM
+		
+	Welcome.java
+		
+		53 keywords--lowercase
+		
+		
+		compailation--->compiler
+		
+		compailation-->source code-->byte code 
+		
+		javac filename.java --->.class
+		
+		JVM
+		java classname-->output
+		//JVM-->binary 0's 1's byte code   translator --->translation
 
-alphabates 	english 26
-			
-keywords   53 -->all the keywords in java must be in lowercase 			
-			
-			.java
-			
-
-//printing welcome message 
-
-//
-//In class name everyword first letter should be capital 
-
-//JDK -->JRE -->JVM(0's 1's)byte code 
-
-
-// translater -->translation
-
-//source code -->compiler -->byte code 
-//.java-->compiler--->.class   javac filename.java for compailation
-
-java classname-->for execution  JVM
-
-
-Identifiers:
-=============
- any name in java will call it as identifier
-
-	classname,varname,methdname,objname,....
-
-
-class Test@123
-{
-
-
-}
+//source /user understandable language   ---->machine /byte/binary  -->compiler-->compailation
+//			compiler-->compailation			execution/JVM
+// .java  -------------------------->.class------------->output
+		//	javac filename.java				java classname		
+		
+Idetifiers:
+===========		
+	any	name in java will call it as idetifier 
+		it can be classname,method name ,variable,obj,interface name......
+		
+		
 		a-z
 		A-Z
 		0-9
 		$
 		_
-Variables:
-==========
-		234928374-- naren
-
-	12+13
-	
-	age=123;
-	
-	variable name of memory location
-	
-	syntax:
-	
-		datatype varname=value;
-
+		
+variables:
+=========		
+		variable is a name of memory location
+		
+syntax:		datatype varname=value;
+			
+		local -->inside the method
+		global-->outside the method and with in the class 
+		
 Datatypes:
-=========
-
-	empid		123
-	name		narendra
-	contact		94949494
-	gender		M
-	salary		23.56
-	aadhar
-						byte age=31;
-
-	premitive dt   non-pdt
-
-	8 				String,arrays...
-
-		numeric data
-byte	1 byte		-128 to 127
-short	2 bytes		-32768 to 32767	
+=========		
+		primitiveDT       non-primitiveDT 
+		
+							String,array,object...
+		
+		8 PDT		empid,empname,salary,address,email,desgnation,gender....
+		
+byte    1 byte		-128 to 127
+short	2 bytes		-32768 to 32767
 int		4 bytes		-2147483648 to 2147483647
-long	8 bytes		-2 power 64 to (2 power 64)-1	
-		decimal data
-float	4 bytes		23.43123234234423f	  5to6 
-double	8 bytes							14 to 15 
+long	8 bytes		-2 power 64 to (2 power 64)-1			byte age=31;
 
-char	2 bytes					char gender='M'
-boolean	 1 bit	true,false		
+float	4 bytes		5 to 6   21.32589236289738 f
+double	8 bytes    14 to 15
 
-				1		0
-
-
-	local variables -->inside the method
-	global variables-->outside the method and inside the class
-	
-			2 types 
-				instance 
-				static 
-
-JDK-->JRE-->JVM
-
-	-->memory  areas
-
-
-Instance and static:
-====================
-
-
-Syntax
-		static 
-		non-static / instance 
-	
-Memory
-		if it is static will get memory space only once at the time of class loading into JVM 
-		if it is instance will get memory space for every object creation 
-
-					object -->instance of a class  car,tree
-				
-			class 	A
-				{
-				A obj=new A();
-				}			
-				classname objname=new classname();	
-			
-Access
-		if it is static we can access by using class name
-		if it is instance  we can access by using obj reference
-
-Usage 
-
-		where we need one time memory will go for static 
-			ex:countryname,statename,collegename,orgname
-		unique data -->instance 
-			aadhar ,id,contact,accno....
-
-
-
-package -->folder 
-
-
-		java8--->6000 predefined classes 
-	java.lang -->predefined it is default package 
-	
-	com.india			user defined 
-	
-import 
-
-
-
-editor
-netbeans,myeclipse,eclipse,intellji,vscode....
-
-
-apache
-
- ctrl+shift+O -->to organise imports(to add which are needed to remove which are useless)
-
-ctrl+shift+f --->to format java file 
-
-ctrl+/       --->for commenting selected lines 
-
-
-Methods:reusability
-
-
-public,private,protected,default
- accessmodifier static/instance returntype methodname(param1,param2....)
-			{
-			
-			
-			
-			}
-
-
-
-
-
-Flow Control:
-============
-
-		
-
-Operators:
-==========
-
-
-
-Arrays:
-=========group of values
-
-
-		variables
-		
-		
-		datatype varname=value;
-		
-		int marks=123;
-			marks=234;
-			sop(marks);//234
-		
-		
-		int marks1[]={12,32,43,22,46,8,64,121,545};//literal 
-		
-		int marks2[]=new int[10];
-		
-		marks2[0]=123
-
-index
-
-		sop(marks1[0])
-
-
-Dynamic Input:						int[] args		12,23,4,32,"",false
-==============
-			public static void main(String[] args) //jvm   java classname sandeep 123 true
-
-
-
-	"asdkga23@_12"
-
-JVM:-
-====
-
-	java setup 
-
-
-	JDK-->JRE-->JVM
-	
-	
-	compailation:
-	
-			source ---->byte 
-			.java --->.class
-
-			compiler -->javac filename.java
-			
-			execution--->java classname   JVM
-
-
-
-JVM Architecture
-
-		3 parts
+char	2 bytes		unicode	'M'
+boolean 1 bit     true-1,false-0		
 		
 		
 		
-			CLSS
-			
-			
-			Memory Areas
-			
-			
-			
-			Execution Engine 
-
-
-
-
-
-OOPS Features:
-==============
-
-
-		inheritance
-		polymorphisam
-		
-		encapsulation
-		abstraction
-
-
-
-String
-
-exception handling
-
-multi threading
-
-collections
-
-			21,11,43,9,7,62,23-->0,1,2,3,4,5,6
-
-
-		7,9,11,21,23,43,63
-		
-
-	String,StringBuffer,StringBuilder	java.lang
-	=================================
+	ASCII 
+		A-65
+		a-97
 	
 	
-		group of chars -->string -->""
-	
-	
-				"welcome to india @ 78"
-	
-	
-	muttable 
-	imuttable
-	
-	
-	String orgName="capgemini";//literal
-	
-	String orgName1=new String("capgemini");//new 
-	
-	
-	
-			String is imuttable
-			StringBuffer,StringBuilder is muttable
-	
-	OOPS:
-	====
-	
-	1)inheritance
-	2)polymorphisam		:performance
-	
-	3)abstraction
-	4)encapsulation		:security
-	
-	
-	
-		1)inheritance:
-		==============
-		Code Reusability ---performance ,  extends  & implements
-	
-	inheritance is a process of aquiring the features/properties from one class another class
-	
-	
-	
-	class X{
-	
-	//1000 methods...
-	//20 variables .....
-	
-	}
-	
-	
-	class Y extends X{
-	
-	//200 methods
-	
-	
-	}
-	
-
-	
-	java.lang -->predefined it is default package 
-	
-	
-	By default package for every java file is java.lang
-	By default parent class for every java class is java.lang.Object   
-	
-	
-	
-	
-	Multiple Inheritance:
-	====================
-	
-	MI is not supported by java through classes 
-	MI is supported by java through interfaces 
-	
-	
-	
-	
-	parent/super
-	
-	child/sub
-	
-	
-	methodss
-					concrete methods:method with body/logic/implementation :non-abstract
-	public void add(int a, int b) {
-		System.out.println("add of two numbers : " + (a + b));
-	}
-
-	public void sub(int a, int b) {
-		System.out.println("sub of two numbers : " + (a - b));
-
-	}
-
-					
-	abstract methods:method with body/logic/implementation
-	
-	public abstract void mul(int a, int b);//security
-	
-	
-	abstraction:
-	
-		class		   : class is collection of only concrete methods
-	
-		abstract class :abstract class is combination both concrete and abstract methods 0-100%
-	
-		interface	   :interface is a collection only abstract methods  100%
-	
-	
-	
-	multiple inheritance:
-	
-				MI NOT SUPPORTED BY JAVA THROUGH CLASSES
-				MI  SUPPORTED BY JAVA THROUGH INTERFACES
-				
-				
-	
-class	parent1 				class parent2
-{								{
-
- void m1()						void m1()
- {								{
- sop("hello");					sop("hi");
- }								}	
-
-}								}
-	
-	
-class Child extends parent1,parent2
-{
-
- p s v main(String args[])
- {
-	Child child=new Child();
-			child.m1();//
-		
- 
- }
-
-}	
-
-
-
-
-Interface	parent1 			interface parent2
-{								{
-
- void m1();						void m1();
-
-}								}
-	
-	
-class Child implements parent1,parent2
-{
- p s v main(String args[])
- {
-	Child child=new Child();
-			child.m1();//
-		
- 
- }
- 
- public void m1()
- {
- sop("welcome");
- }
-
-}	
-
-
-
-Access Modifiers:
-=================	
-	
-	public		every where 
-	private		only inside the class /class level scope 
-	protected	inside the package and outside the package only in child
-	default 	package level scope
-	
-	
-	
-Polymorphisam:
-==============	
-	
-		poly-->many
-		morphisam-->forms
-	
-		same action in different ways 
-	
-	
-	
-	method overloading/compile time polymorphisam/static binding 
-	
-			method name is same  signature is different 
-	
-										no of params
-										order of parmas
-										type of params
-	
-	
-	method overriding :
+	Instance and static 
 	===================
 	
-		method name is same implementation is different 
+	SYNTAX:
+		will use static  keyword to define static variable 
+		instance
+	
+	MEMORY
+			static :static properties will get memory space only once at the time  class loading into JVM
+			instance :instance properties will get memory at the time object creation
+						class 
+						object -->memory creation(instantiation)
+						
+						classname objname=new classname();
+	
+	ACCESS
+	
+		will use classname to access static properties
+		will use objref to access instance properties
+	
+	USAGE 
+	
+		for common data where we reuire one time memory will go for static
 		
-				inheritance
+					like schoolname,orgname,coutryname,statename....
+	
+		for unique will go for instance
+				empid,stuid,pancard,aadhar,contact.....
+	
+	
+	
+	java
+	class   java classname jvm
+	
+	execution
+	
+	3 parts 
+			loading the .class jvm
+				CLSS
 				
-			class Parent{
-			
-			properties()
-			{
-			sop("1000 crores")
-			}
-			marraige()
-			{
-			sop("X ")
-			
-			}
-		
-			}	
-			class Narendra extends Parent
-			{
-			
-			marraige()
-			{
-			sop("Y")
-			
-			}
-			
-			
-			}
+						
 				
+				
+				memory areas
+				
+				
+				
+				
+				Execution Engine
+					
 	
 	
-	final:
-	======
+	zero->byte,short,int,long
 	
-	final variable value we can not change through out the program
-	final methods we cannot override
-	final classes we cannot inherit
+	0.0-->float,double
+	false-->boolean
+	space-->char
 	
-	constructor:
-	==============
+dynamic data:
+=============	
 	
-	specail method 
+	package,import 
 	
 	
-	Test 
+	package
 	
-	classname objname=new classname();
+			predefined 			java.lang,java.util.java.io   ...
+			user defined    package com.onlinetraining9.basics
+			
+			
+			
+			
+			
+			IDE tool apache 
+			
+			
+			
+		NOTE:By Default package avialable for every java file is java.lang	
+			
+			
+Methods:
+========		instance/static	
+			
+			public static o main(String args[])
+			{
+			
+			
+			}
+			
+			
+			syntax:
+			======
+			
+			accessmodifier static/instance returntype methodname(param1,param2....)
+			{
+			
+			return 
+			
+			}
+			
+Flow Control Statements:
+========================			
+			
+			
+			
+			
+OOPS:
+======
+
+				1)Performance		inheritance,polymorphisam
+				2)Security			abstraction,encapsulation
+
+
+
+
+Inheritance:
+============
+			code reusability
 	
-	classname objname=new constructor();
-	
-	->constructor name must be same as classname 
-	->constructor is used to intialize object 
-	
-	->default constructor,param constructor
-	
-	->constructor looks like method but method name can be anything and method can return anything
-	
+	aquiring the features/properties from one class to another class
 	
 
-	this ,super:
-	===========
+extends ,implements
+
+
+class Parent		PARENT/SUPER
+{
+	//200 variables
 	
-	this:it is used to represent current class properties(variable,method,constructor,object)
-	super:it is used to represent parent class properties(variable,method,constructor)
+	//1000 methods 
+	
+
+}
+
+
+ 
+class Test 	extends	Parent			class A
+{
+	//10 methods
+
+}
+
+
+	NOTE:
+			By Default PACKAGE avialable for every java file is java.lang	
+			By Default PARENT CLASS avialable for every java class is java.lang.Object	
+
+
+Multiple Inheritance:
+=====================
+
+	MI is not supported by java through classes
+	MI is  supported by java through interfaces
+	
+	class Parent1            class Parent2
+	{						{
+	
+	void m1()				void m1(){
+	{		
+	sop("hello");			sop("hi")
+	}						}
 	
 	
 	
-	Encapsulation:
-	==============
-	wrapping the data and methods together 
+	}						}
 	
-	data must be private 
-	methods must public
-	
-		
-		
-		class Employee
-		{
-			private	int eid;
-				String ename;
-				int salary
-				String address;
-				
-			//2 methods	
-				setter
-				getter
-		
-		
-		}
-		
-	class Test
+	class Child extends Parent1,Parent2
 	{
-		
-		main()
-		{
-		Employee emp=new Employee()
-		
-		}
 	
+	p s v main(String args[])
+	{
+		Child child=new Child();
+				child.m1()
 	
+	}
 	}
 	
 	
-Exception Handling:
-===================
-
-		1)system defined error messages 
-		2)abnormal termination
-
-
-
-		class Test
-		{
-		1
-		2		//stop execution  throw an error  abnormal termination
-		
-		
-		
-		
-		
-		1000
-		
-		
-		
-		}
-
-
-	1.user friendly error messages
-	2.normal termination
-
-
-
-
-		throw -->which is used throw an error explicitly
-		throws
-
-
-
-
-
-		AI
-		NPE
-		NFE
-		
-			1.take one class and make that as child class to the any one of the parent exception class(Throwable,Exception,RuntimeException)
-
-			2.just create one param constructor
-
-
-	username 
-	password
+	
+	interface Parent1        interface Parent2
+	{						{
+	
+	void m1();				void m1();
 	
 	
-			narendra   canada
-			
-			login success
-		else
-			InvalidCredentials
-			
-			
-			
-FILE IO:
-=========
-
-	files				java ---->file
-	database
-
-				  java.lang
-		Scanner-->java.util
-			   -->java.io
-
-		file-->empinfo.txt
-
-			File-->java.io
-
-
-
-
-1.login
-2.register
-
-		2
-		username
-		password			-->write credential.txt
-		1
-		username
-		password			-->read credential.txt
-		
-		
-		
-Collections:
-============	
-group	
-
-		variables:
-		==========
-		name of memory location
-		
-		
-		int a=123;
-			a=234;
-			
-			[]-->arrays
-		
-		int a[]={12,22,31,44,23};
-		
-		sop(a[4]);AIOE
-		
-		int values[]=new int[10];//AIOE
-		limitations:
-		
-			1.arrays are fixed in size 
-			2.arrays will allow only homogeneous data /similar data
-			3.no utility methods
-			
-
-
-Advantages collections:
-======================		
-			
-			1.collections are not fixed in size /growable in nature   -->AL-->10-->16 -->(cc*3/2)+1
-			2.collections will allow both homogeneous and heterogeneous data. 
-			3.lots of predefined methods
-			
-List:
-=====
-
-	1.duplicates are allowed 
-	2.insertion order is preserved 
-
-SET:
-====
-	1.duplicates are not allowed 
-	2.insertion order is not preserved 
-			
-			
-			
-		Arraylist methods not synchronized 	-10-->16
-		vector methods are synchronized		-10--->20
-			
-			
-			
-			
-			
-			
-			
-		
 	
+	}						}
+	
+	class Child implements Parent1,Parent2
+	{
+	
+	p s v main(String args[])
+	{
+		Child child=new Child();
+				child.m1()
+	
+	}
+	public void m1()
+	{
+	
+	}
+	}
+	
+	Methods:
+	=========
+	
+		abstract
+		
+		concrete /non abstract 
+	
+	
+	concrete method
+		method with body/logic/implementation
+	
+	abstract method
+		method with out body/logic/implementation
+	
+	
+	
+	concrete class 		:	its a collection of only concrete methods
+	
+	abstract class		:	its a combination of both concrete and abstract methods
+	
+	interface			:	its a collection of only abstract methods
+	
+				interface methods are by default public abstract 
+				interface variables are public static final
+	
+		Abstraction:
+			
+				abstract class		0-100
+				
+				interface			100%
 
 
+AccessModifiers:
+================
+	public ,private,protected,default
+
+		
+			public -->everywhere (inside or outside the package whether it is child or not )
+			private --->class level scope
+			protected --->package level scope+outside the package when ever it is child
+			default--->package level scope 
+			
+			
+polymorphisam:many forms
+
+			method overloading/compile time polymorphisam/static binding 
+			
+			method overriding/runtime polymorphisam/dynamic bidning 
+			
+			
+	method overloading:
+=========================	
+			method name is same signature is different 
+			
+								no of params
+								order of params
+								type of params
+			
+			
+	method overriding:
+=====================
+			method name is same implementation is different
+			
+			there must parent and child relationship
+			
+			
+			
+			
+class Parent
+{
+//1000 methods
 
 
+}
+class Child extends Parent
+{
+
+overriding
+ same method name with new/different implementation 
+
+}
 
 
+final 
 
+	before the class
+	before the method 
+	before the variable
+		
+constructor:
+=============			
+			
+			special method -->intialize an object 
+			
+			
+		A
 
+			A a=new A();
+			classname objname=new constrcutor();//constrcutor calling
+			
+			
+			
+			default 
+			parameterized 
+			
+			
+			constrcutor name classname must be same
+			
+			
+			
+			public void m1()
+			{
+			
+			}
+			
+			
+			
+			this:which is use to reperesent current class properties(variable,method,constrctor,object)
+			super:which is use to reperesent parent class properties(variable,method,constrctor)
+			
+			
+Encapsulation:
+=============
 
+			its process of wrapping the data and corresponding methods together
+			
+			
+			class Employee
+			{
+			variabels		eid =123,ename,esal=-100,eadd,edesg.... 
+			+
+			methods			public --->setters and getters
+			
+			
+			}
+			
+			
+group chars 
 
+		String,StringBuffer,StringBuilder -->java.lang
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+			"sandeep";
+		
+			
+			String is immutable(fixed)
+			
+			StringBuffer ---->SBuffer methods are synchronized 
+			StringBuilder --->SBuilder methods are not synchronized  
+			
+			
+			
+			synchronized
+								thread-->a smallest unit of process
+											
+												t1
+												t2
+												t3
+												t4
+			
+			public synchronized void m1()
+			{
+					t1
+			
+			}
+			
+			public  void m1()
+			{
+				t1
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
