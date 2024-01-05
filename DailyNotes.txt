@@ -770,11 +770,15 @@ List:
 	1.duplicates are allowed 
 	2.insertion order is preserved 
 
+SET:
+====
+	1.duplicates are not allowed 
+	2.insertion order is not preserved 
 			
 			
 			
-			
-			
+		Arraylist methods not synchronized 	-10-->16
+		vector methods are synchronized		-10--->20
 			
 			
 			
