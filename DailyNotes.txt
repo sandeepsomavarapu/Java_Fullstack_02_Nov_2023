@@ -782,13 +782,14 @@ SET:
 			
 			
 			
+	In every collection class both homogeneous and heterogeneous objects are allowed except TS,TM		
 			
 			
-			
-			
+			Comparable -->FI--->SAM-->single abstract method
+			Comparator
 		
 	
-
+			
 
 
 
