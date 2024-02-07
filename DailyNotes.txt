@@ -790,26 +790,134 @@ SET:
 		
 	
 			
+Bank APP:
+
+	1)Create Account
+	2)Balance Enquiry
+	3)Withdraw
+	4)Deposit
+	5)FundTransfer
+	6)Print Transactions
+	7)Exit
+	
+
+ProductManagement
+	1)Add Product		productid,productName,productPrice,productCategory,productQuantity,brand,warrenty,...
+	2)Update Product	
+	3)Delete Product	
+	4)get Product
+	5)GetAll Products
+	6)GetAll Products between the range 
+	7)GetAll Products by brand
 
 
 
 
+Layered Architecture
+
+			UI layer  controller layer  
+			
+			service layer/business logic layer
+			
+			dao  layer -->database (collections)
+			
+Multi Threading:
+================
+
+	multi tasking 
+
+		executing several tasks simultaniously
+
+		process based multi tasking
+		
+			executing several tasks simultaniously where each and every task sepearte independent process 
+		
+		thread based multi tasking /multi threading 
+			
+			executing several tasks simultaniously where each every task belongs same process
+
+	process:collection of threads
+	thread:smallest unit of process
+							t1,t2,t3,t4
+
+
+		segment-1
+		
+		
+		
+		segment-2
+		
+		
+		
+		segment-3
 
 
 
+2 ways 
+
+	1.class Test implements Runnable 	-->FI-->SAM-->run
+	2.class Test extends Thread	
 
 
+thread life cycle 
+thread class methods
+synchronization				synchronized
+inter thread communication
+			wait,notify,notifyAll
+		
+Java8 Features:
+================
+1)Lambda Expressions-->
+2)Functional Interface,interface one abstract  method...SAM
+3)Default Methods and static methods
+4)Predefined Functional Interfaces/runnable  40+		java.util.function
+   Predicate		
+   Function		
+   Consumer	  
+   Supplier			
+   etc..   
+
+5)Double colon Operator(::)
+		Method Reference
+		Constructor Reference
+6.streams(Terminal and Intermediate Operations)stream....
+7.Date and Time APi  Date--->LocalDate,LocalTime,LocalDateTime,Period
+8.Optional class
+
+Lambda Expressions:
+--------------------
+
+anonymous function: with out method name/modifier/return/param DT/{}
+
+A
+
+public int add(int a,int b)
+{
+	int result=a+b;
+	return result;
+}
+
+  (a,b)->a+b;
+
+Functional Interfaces:
+=====================
+SAM-->single abstract method
+
+	interface-->any no of abstract methods
+	Marker interface-->zero abstract methods		java.io.Serializable
+	Functional Interface-->one abstract method
+	
+		Comparable,Runnable,Comparator...
 
 
+Default and static methods
 
+	interface-->public abstract
 
+	1.8
+		implemented methods Interface
+			default ,static 
 
-
-
-
-
-
-
-
-
-
+Predefined FI
+				java.util.function
+	
